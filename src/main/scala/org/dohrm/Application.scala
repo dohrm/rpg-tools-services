@@ -15,6 +15,8 @@ object Application extends App {
   implicit val executionContext: ExecutionContext = actorSystem.dispatcher
   implicit val materializer: Materializer = Materializer.createMaterializer(actorSystem)
 
+  val myOption: Option[String] = None
+
   val httpApp = new HttpApp {
     override protected def routes: Route = path("/") {
       get {
@@ -24,4 +26,6 @@ object Application extends App {
   }
 
   httpApp.startServer("localhost", 9000, actorSystem)
+
+  myOption.get
 }
