@@ -15,17 +15,13 @@ object Application extends App {
   implicit val executionContext: ExecutionContext = actorSystem.dispatcher
   implicit val materializer: Materializer = Materializer.createMaterializer(actorSystem)
 
-  val myOption: Option[String] = None
-
   val httpApp = new HttpApp {
-    override protected def routes: Route = path("/") {
+    override protected def routes: Route = path("") {
       get {
-        complete(HttpEntity("Hello, World!"))
+        complete(HttpEntity("Hello, World2!"))
       }
     }
   }
 
   httpApp.startServer("localhost", 9000, actorSystem)
-
-  myOption.get
 }
