@@ -18,7 +18,7 @@ object Application extends App {
   val httpApp = new HttpApp {
     override protected def routes: Route = path("") {
       get {
-        complete(HttpEntity("Hello, World2!"))
+        complete(HttpEntity("Hello, World4!"))
       }
     }
   }
