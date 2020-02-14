@@ -1,0 +1,2 @@
+# rpg-tools-services
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/e5a19e952acd429ca89c7a41b1888141)](https://app.codacy.com/gh/dohrm/rpg-tools-services?utm_source=github.com&utm_medium=referral&utm_content=dohrm/rpg-tools-services&utm_campaign=Badge_Grade_Settings)
